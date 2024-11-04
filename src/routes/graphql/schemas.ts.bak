@@ -7,7 +7,7 @@ export const gqlResponseSchema = Type.Partial(
   }),
 );
 
-
+/*
 export const createGqlResponseSchema = {
   body: Type.Object(
     {
@@ -19,10 +19,20 @@ export const createGqlResponseSchema = {
     },
   ),
 };
+*/
 
 
-
-
+export const createGqlResponseSchema = {
+  body: Type.Object(
+    {
+      type Post {
+			id: Type.String(),
+			title: Type.String(),
+			content: Type.String()
+			}
+    } 
+  ),
+};
 
 
 /*

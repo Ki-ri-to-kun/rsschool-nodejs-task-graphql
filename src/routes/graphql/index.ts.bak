@@ -33,7 +33,7 @@ const schema = new GraphQLSchema({
 			test: {
 				type: GraphQLString,
 				resolve: async () => {
-					return 'test';
+					return 'test test';
 				}
 			}
 		}
